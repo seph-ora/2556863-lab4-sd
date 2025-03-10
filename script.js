@@ -1,3 +1,4 @@
+//most of functionally was done by me, used the web to fix errors here and there
 document.addEventListener("DOMContentLoaded", function(){
     document.querySelector(".button").addEventListener("click", clickFunction)
 });
@@ -57,25 +58,6 @@ const handleCountry = (countryDetails) => {
                 borderDiv.appendChild(image);
                 borderDiv.appendChild(par);
                 bordersContainer.appendChild(borderDiv);
-
-
-                // Create elements for each border country
-                /*const borderDiv = document.createElement("div");
-                borderDiv.style.display = "inline-block";
-                borderDiv.style.margin = "5px";
-                
-                const flagImg = document.createElement("img");
-                flagImg.src = borderFlag;
-                flagImg.alt = `Flag of ${borderName}`;
-                flagImg.width = 50;
-                
-                const nameLabel = document.createElement("p");
-                nameLabel.innerText = borderName;
-                nameLabel.style.textAlign = "center";
-                
-                borderDiv.appendChild(flagImg);
-                borderDiv.appendChild(nameLabel);
-                bordersContainer.appendChild(borderDiv);*/
             })
             .catch(error => console.error(`Error fetching border country ${border}:`, error));
     });
@@ -83,21 +65,3 @@ const handleCountry = (countryDetails) => {
 };
 
 window.clickFunction = clickFunction;
-
-/*fetch("https://restcountries.com/v3.1/name/deutschland")
-.then((r) => r.json())
-.then((country) => {
-    console.log(country)
-    handleCountries(country)
-});
-
-const handleCountry = (countryDetails) => {
-document.querySelector("p").innerText = countryDetails.capital
-document.querySelector("p").innerText = countryDetails.population
-document.querySelector("p").innerText = countryDetails.region
-document.querySelector("p").innerText = countryDetails.flag
-}
-
-function clickFunction() {
-    document.getElementById("theCountry").value = "Hello World";
-  }*/
