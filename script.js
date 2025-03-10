@@ -27,6 +27,7 @@ const handleCountry = (countryDetails) => {
     document.getElementById("capital").innerText = `Capital: ${countryDetails.capital}`;
     document.getElementById("population").innerText = `Population: ${countryDetails.population}`;
     document.getElementById("region").innerText = `Region: ${countryDetails.region}`;
+    document.getElementById("label").innerText = `Flag:`;
     document.getElementById("img").src = countryDetails.flags.png;
     document.getElementById("bordering-countries").innerText = `Bordering Countries: ${countryDetails.borders}`;
 
