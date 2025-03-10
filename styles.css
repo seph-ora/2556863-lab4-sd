@@ -1,5 +1,15 @@
-.txtbox1{
+.input{
     background-color: pink;
     width: 220;
     height: 30;
+    border: none;
+    border-bottom: 3px solid palevioletred;
+}
+
+.button{
+    color: palevioletred;
+}
+
+p {
+    color: purple;
 }

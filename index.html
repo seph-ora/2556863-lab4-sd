@@ -2,20 +2,28 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles.css">
-    <script typr="mdoule" src="./script.js"></script>
+    <script src="./script.js"></script>
 </head>
 <body>
     <form> 
         <label>Country:</label><br>
-        <input class="txtbox1" type="text" id="theCountry"><br>
-        <button class="btn1" type="button" onclick="clickFunction">Click Click!</button> 
+        <input class="input" type="text" id="theCountry"><br>
+        <button class="button" type="button">Click Click!</button> 
 
-        <p>stuff</p>
 
-        <section id="country-info"></section>
-        <section id="bordering-countries"></section>
 
-        <p>stuff</p>
+        <section id="country-info">
+            <p id="capital"></p>
+            <p id="population"></p>
+            <p id="region"></p>
+            <p id="flag"></p>
+            <img id ="img" src="" alt="" srcset="" >
+        </section>
+
+        <section id="bordering-countries">
+            <p id="bordering-countries"></p>
+        </section>
+
     </form>
 </body>
 </html>
